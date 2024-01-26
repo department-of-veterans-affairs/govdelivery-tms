@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
-  gem 'brakeman'
   gem 'bundler-audit', git: 'https://github.com/rubysec/bundler-audit'
   gem 'mail'
   gem 'rake'
