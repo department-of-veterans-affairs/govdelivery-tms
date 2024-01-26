@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  linting and security:
+  linting_and_security:
     runs-on: ubuntu-latest
 
     steps:
