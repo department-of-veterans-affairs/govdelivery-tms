@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
+  gem 'brakeman'
   gem 'bundler-audit', git: 'https://github.com/rubysec/bundler-audit'
   gem 'mail'
   gem 'rake'
@@ -18,7 +19,5 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec_junit_formatter'
-  gem 'rubocop-junit-formatter'
   gem 'simplecov', require: false
 end
