@@ -16,13 +16,10 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Lint code with Rubocop
-        run: bundle exec rubocop -r rubocop-thread_safety --parallel --format progress --format RuboCop::Formatter::JUnitFormatter
-
       - name: Run bundle-audit (checks gems for CVE issues)
         run:  bundle exec bundle-audit check --update
 
-      - name: Run Rubocop
+      - name: Lint code with Rubocop
         run: bundle exec rubocop --parallel --format github
 
       - name: Run Brakeman
